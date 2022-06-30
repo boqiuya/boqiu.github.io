@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/login1.jpg) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.login-box{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 450px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, .5);
+    border: 10px;
+    padding: 20px 50px;
+    border-radius: 20px;
+}
+
+.login-box h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+.login-box .input-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-35px);
+}
+
+.login-box .input-box .input-text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-box .input-box .input-text span{
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.login-box .input-box .input-text img{
+    width: 20px;
+    height: 20px;
+}
+.login-box .input-box .input-text input{
+    border: none;
+    padding: 6px;
+    border-bottom: 1px solid white;
+    background-color: #ffffff00;
+    color: #fff;
+    margin: 20px;
+}
+
+.login-box .input-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    width: 145px;
+    height: 25px;
+    color: #fff;
+    background: linear-gradient(120deg,#a6c0fe,#f68084 100%);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.login-box .input-box .sign-up{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+}
+.login-box .input-box .sign-up a{
+    color: #3498db;
+    text-decoration: none;
+}
+
+.login-box .input-btn a{
+    color: white;
+    text-decoration: none;
+}

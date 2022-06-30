@@ -1,0 +1,199 @@
+/* 页面大图 */
+.role{
+    background: url(../images/role-pic.png);
+}
+.pic-top {
+    position: relative;
+    width: 100%;
+    background-color: pink;
+}
+
+.pic-top img {
+    width: 100%;
+    height: 500px;
+}
+
+.pic-top .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    overflow: hidden;
+}
+
+.pic-top .mask .mask-text {
+    position: absolute;
+    text-align: center;
+    left: 30%;
+    top: 40%;
+}
+
+.pic-top .mask .mask-text p {
+    font-size: 18px;
+    color: white;
+}
+
+.pic-top .mask .mask-text span {
+    font-size: 50px;
+    color: white;
+
+}
+
+.pic-top .mask .mask-text .mask-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 150px;
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+    color: white;
+    background: rgb(226, 208, 44);
+
+}
+
+
+
+
+/* 人物介绍 */
+.jieshao{
+    color: rgb(41, 129, 207);
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.book {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    margin-left: 230px;
+    /* 开启三d效果 */
+    transform-style: preserve-3d;
+    /* 设置视距 */
+    perspective: 2000px;
+    /* 设置阴影 */
+    box-shadow: inset 300px 0 30px rgba(0, 0, 0, .2), 0 10px 100px rgba(0, 0, 0, .3);
+    /* 动画过渡 */
+    transition: 1s;
+}
+
+.book2{
+    margin-left: 70%;
+    margin-top: -100px;
+}
+
+.book3{
+    margin-top: -100px;
+}
+
+.book4{
+    margin-left: 70%;
+    margin-top: -100px;
+}
+.book5{
+    margin-top: -100px;
+}
+
+
+/* 鼠标移入，阴影变化+旋转 */
+.book:hover {
+    transform: rotate(-10deg);
+    box-shadow: inset 20px 0 30px rgba(0, 0, 0, .2),
+        0 10px 100px rgba(0, 0, 0, .3);
+}
+
+.book::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 100%;
+    height: 5px;
+    background-color: #0d2a50;
+    /* 设置旋转元素的基点位置 */
+    transform-origin: bottom;
+    /* 沿x轴倾斜45° */
+    transform: skewX(-45deg);
+}
+
+.book::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -5px;
+    width: 5px;
+    height: 5px;
+    background-color: #3d5a83;
+    /* 设置旋转元素的基点位置 */
+    transform-origin: left;
+    /* 沿x轴倾斜45° */
+    transform: skewY(-45deg);
+}
+
+/* 封面 */
+.book .cover {
+    width: 100%;
+    height: 100%;
+    background: url(../images/role1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-origin: left;
+    transition: 1s;
+}
+.book2 .cover{
+    background: url(../images/role2.jpg);
+}
+
+.book3 .cover{
+    background: url(../images/role4\ .jpg);
+}
+.book4 .cover{
+    background: url(../images/role3.jpg);
+}
+.book5 .cover{
+    background: url(../images/role5.jpg);
+}
+
+.book .cover span {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    background-color: #fff;
+    font-size: 30px;
+    font-family: "隶书";
+    /* 竖向文本 */
+    writing-mode: vertical-lr;
+    padding: 10px 5px 5px 5px;
+    /* 字间距 */
+    letter-spacing: 5px;
+}
+
+.book:hover .cover {
+    transform: rotateY(-135deg);
+}
+
+.book .content {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 1em;
+    z-index: -1;
+    font-size: 14px;
+    font-family: "隶书";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book .content .strong{
+    color: #0d2a50;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+
